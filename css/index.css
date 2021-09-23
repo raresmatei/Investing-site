@@ -74,8 +74,11 @@ header{
     padding-top: 15px;
 }
 
+#account-details pre{
+    font-family: Raleway;
+}
 
-#btn-sign-in button{
+#btn-log-in button{
     background-color: #141D26;
     border-style: none;
     border-radius: 10px;
@@ -88,6 +91,6 @@ header{
     /*flex-grow: 1;*/
 }
 
-#btn-sign-in button:hover{
+#btn-log-in button:hover{
     background-color: #1f2c3a;
 }
