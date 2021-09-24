@@ -36,91 +36,32 @@
                 <li id="crypto-nav">crypto</li>
             </ul>
         </div>
+        
 
-        <div class="container">
-            <div id="trading-group" class="trading win-disposable pagecontrol">
-                
-                <!-- Instruments -->
-                <div>
-
-                    <!--Table head-->
-
-                    <div class="section-table-head" id="instrumentsTableHeader">
-                        <ul id="instrumentsTableHeaderItems">
-                            <li>Instrument</li>
-                            <li>Change</li>
-                            <li>Price</li>
-                        </ul>
-                    </div>
-                            
-
-                    <!--table body-->
-                        <div class="section-table-body win-repeater win-disposable ui-sortable ui-sortable-disabled" id="instrumentsRepeater" data-win-control="WinJS.UI.Repeater" tabindex="0">
-                                
-                        <div class="instrument green-change selected" data-instrument-id="6" id="_win_bind5747">
-                            <div class="name" id="_win_plus500_bind2156" data-dir="ltr">
-                                <span class="drag"></span>
-                                <span id="_win_bind5748" class="">
-                                    <span id="_win_bind5749" class="">Alphabet</span>
-                                    <span class="instrument-name-gray" id="_win_bind5750"></span>
-                                </span>
-                            </div>
-                            <div class="change" id="_win_bind5751">
-                                <span id="_win_bind5752">‎0.90%‎</span>
-                            </div>
-
-                            <!--BROKER-->
-                            <div class="buy" title="undefined" data-no-trading="false" id="_win_plus500_bind2161" data-show="false"></div>
-                            <div class="buy-button" id="_win_plus500_bind2162" data-show="false">
-                                <button class="buySellButton" id="_win_bind5755">Buy</button><!-- disabled functionality, change css class-->
-                            </div>
-                            <!--end BROKER-->
-                
-                            <div class="actions">
-                                <a id="_win_bind5757" class="add-favorite icon-star-o" title="Add to favorites"></a>
-                                <a title="Alerts" id="_win_plus500_bind2163" data-show="true" class="set-price-alert icon-bell-o"></a>
-                            </div>
-                            <div class="information">
-                                 <button class="open-info icon-info-circle" title="Instrument Details" id="_win_bind5758"></button>
-                            </div>
-                
-                            <!-- CFD -->
-                            <div class="positions position-list-empty" id="_win_plus500_bind2164" data-show="true">
-                                        
-                            </div>
-                            <div class="orders win-repeater win-disposable" id="_win_plus500_bind2165" data-show="true">
-                                        
-                            </div>
-                            <!-- end CFD -->
-                            <!-- BROKER -->
-                            <div id="_win_plus500_bind2166" data-show="false" class="positions position-list-empty">
-                                <div class="position broker-position" data-show="undefined" id="_win_bind5759">
-                                    <div id="_win_bind5760" class="">
-                                        <span class="icon-briefcase">
-                                            <span><span class="label" id="_win_bind5761"></span></span>
-                                            <span class="hide-for-small"><span class="label" id="_win_bind5762"></span><span data-currency="" id="_win_bind5763"></span></span>
-                                            <strong><span class="label" id="_win_bind5764"></span><span data-currency="" id="_win_bind5765"></span></strong>
-                                            <strong><span class="label" id="_win_bind5766"></span><span data-currency="" id="_win_bind5767"></span> <span data-percent="" id="_win_bind5768"></span></strong>
-                                        </span>
-                                        <span class="position-actions">
-                                            <button class="broker-sell-position" id="_win_bind5769"></button>
-                                        </span>
-                                        <div class="information"><button class="open-info icon-info-circle" id="_win_bind5770"></button></div>
-                                    </div>
-                                </div>
-                                </div>
-                
-                            <div class="orders win-repeater win-disposable" id="_win_plus500_bind2167" data-show="false">
-                                        
-                            </div>
-
-                            <!-- end BROKER -->
-                                
-                        </div>
-                    </div>
-                
-                </div>
+        <div class="table-container" role="table" aria-label="Destinations">
+            <div class="flex-table header" role="rowgroup">
+                <div class="flex-row" role="columnheader">Instrument</div>
+                <div class="flex-row" role="columnheader">Change</div>
+                <div class="flex-row" role="columnheader">Price</div>
+                <div class="flex-row" role="columnheader"></div>
             </div>
+
+            <div class="flex-table row" role="rowgroup">
+                <div class="flex-row" role="cell">Alphabet</div>
+                <div class="flex-row" role="cell">1%</div>
+                <div class="flex-row" role="cell">100$</div>
+                <div class="flex-row" role="cell"><button>Buy</button></div>
+            </div>
+
+            <div class="flex-table row" role="rowgroup">
+                <div class="flex-row" role="cell">Alphabet</div>
+                <div class="flex-row" role="cell">1%</div>
+                <div class="flex-row" role="cell">100$</div>
+                <div class="flex-row" role="cell"><button>Buy</button></div>
+            </div>
+            
         </div>
+
+
     </body>
 </html>

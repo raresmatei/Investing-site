@@ -95,35 +95,121 @@ header{
     background-color: #1f2c3a;
 }
 
-.container{
-    height: 100vh;
-    /*width: 100vw;*/
-    margin-left: 150px;
-    margin-right:0px;
-}
-
 
 /*---stocks table*/
-
-#instrumentsTableHeaderr{
-    display:flex;
-    flex-direction: row;
+div {
+  box-sizing: border-box;
 }
 
-#instrumentsTableHeaderItems{
-    display:flex;
-    flex-direction: row;
-    color:#CAD8DC;
-    list-style-type: none;
-    justify-content: space-around;
+.table-container {
+    margin-left: 150px;
+    display: block;
 }
 
-#instrumentsTableHeaderItems li{
-    /*padding-left: 40px;
-    padding-right: 40px;*/
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: Raleway;
-    font-weight: bold;
-    font-size:1em;
+.flex-table {
+  display: flex;
+  flex-flow: row wrap;
+  transition: 0.5s;
+  font-family: Raleway;
+}
+
+.flex-table:first-of-type .flex-row {
+  background: #263340;
+  color: #D4D6D9;
+  border-color: #D4D6D9;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.flex-table:hover {
+  background: #2E4762;
+  transition: 500ms;
+}
+
+
+.flex-row {
+  width: calc(100% / 4);
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border-bottom: solid 1px #d9d9d9;
+  color: #D4D6D9;
+  font-size: 0.9em;
+}
+
+.rowspan {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
+  width: 75%;
+  padding: 0;
+}
+.column .flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-bottom: solid 1px #d9d9d9;
+}
+.column .flex-row:hover {
+  background: #F5F5F5;
+  transition: 500ms;
+}
+
+.flex-cell {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border-right: solid 1px #d9d9d9;
+}
+
+
+@media all and (max-width: 767px) {
+  .flex-row {
+    width: calc(100% / 3);
+  }
+  .flex-row.first {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+@media all and (max-width: 430px) {
+  .flex-table .flex-row {
+    border-bottom: 0;
+  }
+  .flex-table .flex-row:last-of-type {
+    border-bottom: solid 1px #d9d9d9;
+  }
+
+  .header .flex-row {
+    border-bottom: solid 1px;
+  }
+
+  .flex-row {
+    width: 100%;
+  }
+  .flex-row.first {
+    width: 100%;
+    border-bottom: solid 1px #d9d9d9;
+  }
+
+  .column {
+    width: 100%;
+  }
+  .column .flex-row {
+    border-bottom: solid 1px #d9d9d9;
+  }
+
+  .flex-cell {
+    width: 100%;
+  }
 }
